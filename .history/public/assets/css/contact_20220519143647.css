@@ -245,12 +245,12 @@ body {
       height: 55px;
       line-height: 55px;
     }
-
+    
   }
   ul {
     padding-left: 8rem;
 }
-
+  
   @media screen and (max-width: 410px) {
     .send-button {
       width: 99%;
