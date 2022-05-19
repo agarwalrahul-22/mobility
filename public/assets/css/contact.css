@@ -1,10 +1,10 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
-    background-color:#101522 !important;
+    background-color:rgb(16,21,34,0.69) ;
     padding-bottom: 100px;
-    opacity: 69% !important;
-  }
+    
+  } */
   
   #contact {
     width: 100%;
@@ -42,7 +42,7 @@ body {
   .form-control, 
   textarea {
     max-width: 400px;
-    background-color: #000;
+    background-color: rgb(16, 21,34);
     color: #fff;
     letter-spacing: 1px;
   }
@@ -86,13 +86,13 @@ body {
   
   .list-item {
     line-height: 4;
-    color: #aaa;
+    color: rgb(16, 21,34);
   }
   
   .contact-text {
     font: 300 18px 'Lato', sans-serif;
     letter-spacing: 1.9px;
-    color: #bbb;
+    color: ;
   }
   
   .place {

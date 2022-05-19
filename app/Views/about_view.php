@@ -11,7 +11,7 @@
       <a href="#more" class="about-btn scrollto">More</a>
     </div>
   </section>  -->
-  <section class="devil">
+  <section class="devil tiwari">
             <div class = "image">
                <img src="<?=base_url()?>/public/assets/img/Egati.png">
             </div>
@@ -25,7 +25,7 @@
                 
             </div>
         </section>
-        <section>
+        <section class = "tiwari">
             <div class = "image">
                <img src="<?=base_url()?>/public/assets/img/who we are.png">
             </div>
@@ -39,7 +39,7 @@
                 
             </div>
         </section>
-        <section>
+        <section class= "tiwari">
             <div class = "image">
                <img src="<?=base_url()?>/public/assets/img/istockphoto-854342964-612x612.jpg">
             </div>
