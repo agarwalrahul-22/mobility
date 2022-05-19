@@ -1,4 +1,8 @@
+.bg{
+    background-color: #040919 !important;
+}
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -14,10 +18,11 @@
     align-content: center;
     min-height: 100vh;
 } */
+
 .tiwari {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #add8e6;
+    background-color: white;
     min-height: 70vh;
     width: 75vw;
     margin: 0 auto;
@@ -30,7 +35,7 @@
     margin-top: 100px !important;
 }
 .image{
-    background-color: #f82249;
+    background-color: #1a2342;
     display: flex;
     border-radius: 12px 0 0 12px;
     margin-left: 10px;
@@ -41,7 +46,7 @@ width:35vw;
 margin:50px auto
 }
 .content{
-    background-color: #add8e6;
+    background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
