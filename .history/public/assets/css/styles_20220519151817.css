@@ -5,16 +5,16 @@
     padding: 0;
      margin: 0;
 }
-/* body{
+body{
     font-family: 'Playfair Display', serif;
     display: grid;
-    background-color: #101522 !important ;
-
+    background-color: #101522 !important;
+    /* background-image: linear-gradient(43deg, #aeb2c5 0%, #b394b1 46%, #897f6c 100%); */
 
     align-content: center;
     min-height: 100vh;
-} */
-.tiwari {
+}
+section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #add8e6;
@@ -24,7 +24,8 @@
     margin-top: 10px;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 12px;
+    border-radius: 12px
+    
 }
 .devil{
     margin-top: 100px !important;
@@ -34,6 +35,8 @@
     display: flex;
     border-radius: 12px 0 0 12px;
     margin-left: 10px;
+    
+
 }
 .image img{
 height:50vh;
@@ -123,4 +126,5 @@ margin:50px auto
     .content p{
         font-size: 14px;
     }
+    
 }
