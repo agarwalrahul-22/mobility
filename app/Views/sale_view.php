@@ -59,19 +59,19 @@
 
                     <div class="input_element">
                         <p>Purchase Date </p>
-                        <input type="date" name="purchaseDT" class="wide" placeholder="type here...">
+                        <input type="date" name="purchaseDT" class="wide" placeholder=" type here...">
                     </div>
 
 
                     <div class="input_element">
                         <p>Chesis No.</p>
-                        <input type="text" name="chesis" class="wide" placeholder="type here...">
+                        <input type="text" name="chesis" class="wide" placeholder=" type here...">
                     </div>
                     
 
                     <div class="input_element">
                         <p>RC Number</p>
-                        <input type="text" name="RC" class="wide" placeholder="type here...">
+                        <input type="text" name="RC" class="wide" placeholder=" type here...">
                     </div>
 
 
@@ -98,7 +98,7 @@
 
                     <div class="input_element" >
                         <p>Vehicle Number</p>
-                        <input type="text" name="VHnumber" class="wide" placeholder="type here...">
+                        <input type="text" name="VHnumber" class="wide" placeholder=" type here...">
                     </div>
 
                     

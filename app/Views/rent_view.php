@@ -60,13 +60,13 @@
 
                     <div class="input_element">
                         <p>Purchase Date </p>
-                        <input type="date" name="purchaseDT" class="wide" placeholder="type here...">
+                        <input type="date" name="purchaseDT" class="wide" placeholder=" type here...">
                     </div>
 
 
                     <div class="input_element">
                         <p>Chesis No.</p>
-                        <input type="text" name="chesis" class="wide" placeholder="type here...">
+                        <input type="text" name="chesis" class="wide" placeholder=" type here...">
                     </div>
                     
 
@@ -95,17 +95,17 @@
 
                     <div class="input_element" >
                         <p>Charges/Km</p>
-                        <input type="text" name="perKM" class="wide" placeholder="type here...">
+                        <input type="text" name="perKM" class="wide" placeholder=" type here...">
                     </div>
 
                     <div class="input_element" >
                         <p>Driver Charges/Day</p>
-                        <input type="text" name="DVRperDay" class="wide" placeholder="type here...">
+                        <input type="text" name="DVRperDay" class="wide" placeholder=" type here...">
                     </div>
 
                     <div class="input_element" >
                         <p>Charges for vehicle/Day</p>
-                        <input type="text" name="VHperDay" class="wide" placeholder="type here...">
+                        <input type="text" name="VHperDay" class="wide" placeholder=" type here...">
                     </div>
 
                     <div class="input_element" >
