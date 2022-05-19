@@ -20,7 +20,8 @@
     <title>Login / Sign Up Form</title>
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <style>
-body {background-color: #101522; }
+body {background-color: #101522;
+padding-top: 50px; }
 .hover-item{color:#f82249;}
 .hover-item:hover{background-color:white; color:#101522;}
 .hover-button{background-color:#f82249;}
@@ -44,7 +45,9 @@ body {background-color: #101522; }
         <div  role="tabpanel" aria-labelledby="tab-register">
             <form>
                 <div class="text-center mb-3">
+                    <div class="text-center">
                     <p>Sign up with:</p>
+</div>
                     <button type="button"  class="btn btn-link btn-floating mx-1 hover-item ">
                         <i class="fab fa-facebook-f"></i>
                     </button>

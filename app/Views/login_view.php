@@ -31,6 +31,7 @@ body { background-color:#101522;}
 </head>
 
 <body>
+    
 <div class="container w-50 p-5" >
 
     <!-- Pills navs -->
@@ -39,7 +40,7 @@ body { background-color:#101522;}
 
     <!-- Pills content -->
     <div  >
-        <div role="tabpanel" aria-labelledby="tab-login">
+        <div  role="tabpanel" aria-labelledby="tab-login">
             <form>
                 <div class="text-center mb-3">
                     <p>Sign in with:</p>
@@ -104,6 +105,7 @@ body { background-color:#101522;}
     </div>
     <!-- Pills content -->
 </div>
+
 </body>
 
 <?= $this->endSection(); ?>

@@ -3,7 +3,7 @@
 
 <?= $this->section("content"); ?>
 
-
+<div class="yash">
 
 <section id="contact">
   
@@ -29,7 +29,7 @@
    <br>
         <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
         
-        <button class="btn btn-danger" id="submit" type="submit" value="SEND">
+        <button class="btn btn-danger send-button" id="submit" type="submit" value="SEND">
           <div class="alt-send-button">
             <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
           </div>
@@ -78,6 +78,6 @@
     </div>
     
   </section>  
-    
+  </div>
 
 <?= $this->endSection(); ?>
