@@ -10,7 +10,7 @@
   <link href="<?= base_url() ?>/public/assets/css/style.css" rel="stylesheet">
   <link href="<?= base_url() ?>/public/assets/css/styles.css" rel="stylesheet">
   <link href="<?= base_url() ?>/public/assets/css/contact.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="<?= base_url() ?>/public/assets/css/sale.css">
   <!-- Favicons -->
   <link href="<?= base_url() ?>/public/assets/img/favicon.png" rel="icon">
   <link href="<?= base_url() ?>/public/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
