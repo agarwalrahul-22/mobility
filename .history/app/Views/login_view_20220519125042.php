@@ -34,7 +34,7 @@ body {background-color: #101522; }
 <div class="container w-50 p-5" >
 
     <!-- Pills navs -->
-
+    
     <!-- Pills navs -->
 
     <!-- Pills content -->
@@ -101,6 +101,8 @@ body {background-color: #101522; }
                 </div>
             </form>
         </div>
+        
+        
     </div>
     <!-- Pills content -->
 </div>
