@@ -10,7 +10,7 @@
   <link href="<?= base_url() ?>/public/assets/css/style.css" rel="stylesheet">
   <link href="<?= base_url() ?>/public/assets/css/styles.css" rel="stylesheet">
   <link href="<?= base_url() ?>/public/assets/css/contact.css" rel="stylesheet">
-  <link rel="stylesheet" href="<?= base_url() ?>/public/assets/css/sale.css">
+
   <!-- Favicons -->
   <link href="<?= base_url() ?>/public/assets/img/favicon.png" rel="icon">
   <link href="<?= base_url() ?>/public/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -55,8 +55,6 @@
                 <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="<?= base_url() ?>/About">About Us</a></li>
-                      <li><a href="<?= base_url() ?>/Rentlisted">Available For Rent</a></li>
-            <li><a href="<?= base_url() ?>/Salelisted">Available For Sale</a></li>
 
             <li><a href="<?= base_url() ?>/Register">Register</a></li>
             <li><a href="<?= base_url() ?>/Register">Subscribe to News Letter</a></li>

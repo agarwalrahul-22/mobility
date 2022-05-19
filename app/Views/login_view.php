@@ -20,7 +20,8 @@
     <title>Login / Sign Up Form</title>
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <style>
-body {background-color: #101522; }
+body {background-color: #101522;
+padding-top: 50px; }
 .hover-item{color:#f82249;}
 .hover-item:hover{background-color:white; color:#101522;}
 .hover-button{background-color:#f82249;}
@@ -31,6 +32,7 @@ body {background-color: #101522; }
 </head>
 
 <body>
+    
 <div class="container w-50 p-5" >
 
     <!-- Pills navs -->
@@ -39,7 +41,7 @@ body {background-color: #101522; }
 
     <!-- Pills content -->
     <div  >
-        <div role="tabpanel" aria-labelledby="tab-login">
+        <div  role="tabpanel" aria-labelledby="tab-login">
             <form>
                 <div class="text-center mb-3">
                     <p>Sign in with:</p>
@@ -97,13 +99,14 @@ body {background-color: #101522; }
                 <div class="text-center">
                 <p>Not a member?</p>
 
-                         <a  class="nav-link" href="#pills-register">Sign Up</a>
+                <a href="<?= base_url() ?>/Register">Sign Up</a>
                 </div>
             </form>
         </div>
     </div>
     <!-- Pills content -->
 </div>
+
 </body>
 
 <?= $this->endSection(); ?>
