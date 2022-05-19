@@ -198,7 +198,9 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Desktop Navigation
 */
-
+#navbar{
+  background-color: #18d26e !important;
+}
 .navbar {
   padding: 0;
 }

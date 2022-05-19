@@ -198,7 +198,6 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Desktop Navigation
 */
-
 .navbar {
   padding: 0;
 }
@@ -241,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #f82249;
+  background-color: #fff;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
