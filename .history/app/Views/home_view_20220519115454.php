@@ -6,7 +6,7 @@
   <section id="hero">
     <div class="hero-container home" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0">Welcome to<br><span>Electrogati</span></h1>
-      <img src="<?= base_url() ?>/public/assets/img/svg11.png">
+      <img src="../../public/assets/img/svg11.png">
     </div>
   </section><!-- End Home Section -->
 <main id="main">
@@ -30,7 +30,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="<?= base_url() ?>/public/assets/img/rentcar.jpg" alt="Speaker 2" class="img-fluid">
+              <img src="assets/img/rentcar.jpg" alt="Speaker 2" class="img-fluid">
               <div class="details">
                 <h3><a href="#">Rent Car</a></h3>
               </div>
@@ -38,7 +38,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="<?= base_url() ?>/public/assets/img/rentbike.jpg" alt="Speaker 3" class="img-fluid">
+              <img src="assets/img/rentbike.jpg" alt="Speaker 3" class="img-fluid">
               <div class="details">
                 <h3><a href="#">Rent Bike</a></h3>
               </div>

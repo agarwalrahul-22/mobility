@@ -20,7 +20,7 @@
     <title>Login / Sign Up Form</title>
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <style>
-body { background-image: url("../../public/assets/img/svg11.png")}
+body {background-color: #101522; }
 .hover-item{color:#f82249;}
 .hover-item:hover{background-color:white; color:#101522;}
 .hover-button{background-color:#f82249;}
@@ -97,7 +97,7 @@ body { background-image: url("../../public/assets/img/svg11.png")}
                 <div class="text-center">
                 <p>Not a member?</p>
 
-                <a href="<?= base_url() ?>/Register">Sign Up</a>
+                         <a  class="nav-link" href="#pills-register">Sign Up</a>
                 </div>
             </form>
         </div>

@@ -196,9 +196,8 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation
+* Desktop Navigation 
 */
-
 .navbar {
   padding: 0;
 }
@@ -273,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: #060c22;
+  color: #fff;
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
