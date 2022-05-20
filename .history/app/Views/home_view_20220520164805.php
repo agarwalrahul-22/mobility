@@ -21,7 +21,7 @@ background-repeat: no-repeat;
   <section id="hero">
     <div class="hero-container home" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0">Welcome to<br><span>Electrogati</span></h1>
-      <img src="<?= base_url() ?>/public/assets/img/1.png" width="350px">
+      <img src="<?= base_url() ?>/public/assets/img/svg11.png">
     </div>
   </section><!-- End Home Section -->
 <main id="main">
