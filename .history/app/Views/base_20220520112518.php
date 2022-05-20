@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Template Main CSS File -->
-  
+  <!-- <link href="<?= base_url() ?>/public/assets/css/style.css" rel="stylesheet"> -->
   <link href="<?= base_url() ?>/public/assets/css/styles.css" rel="stylesheet">
   <link href="<?= base_url() ?>/public/assets/css/contact.css" rel="stylesheet">
-  <link href="<?= base_url() ?>/public/assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="<?= base_url() ?>/public/assets/css/sale.css">
   <!-- Favicons -->
   <link href="<?= base_url() ?>/public/assets/img/favicon.png" rel="icon">
@@ -22,9 +21,15 @@
   <link href="<?= base_url() ?>/public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="<?= base_url() ?>/public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
 
   <title><?= $page_title ?></title>
 </head>
@@ -135,7 +140,7 @@
   <!-- Template Main JS File -->
   <script src="<?= base_url() ?>/public/assets/js/main.js"></script>
   <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+
 </body>
 
 </html>
