@@ -39,14 +39,14 @@ padding-top: 50px; }
     <!-- Pills navs -->
 
     <!-- Pills content -->
-    <div  >
+    <div class="  w-100 p-3" >
         
         
         <div  role="tabpanel" aria-labelledby="tab-register">
             <form>
                 <div class="text-center mb-3" style="font-size:15px; color:rgb(195,195,195);">
                     <div class="text-center" >
-                    <p>Sign Up with:</p>
+                    <p class="text-center">Sign Up with:</p>
 </div>
                     <button type="button"  class="btn btn-link btn-floating mx-1 hover-item ">
                         <i class="fab fa-facebook-f"></i>
