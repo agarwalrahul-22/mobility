@@ -44,9 +44,9 @@ padding-top: 50px; }
         
         <div  role="tabpanel" aria-labelledby="tab-register">
             <form>
-                <div class="text-center mb-3">
-                    <div class="text-center">
-                    <p>Sign up with:</p>
+                <div class="text-center mb-3" style="font-size:15px; color:rgb(195,195,195);">
+                    <div class="text-center" >
+                    <p>Sign Up with:</p>
 </div>
                     <button type="button"  class="btn btn-link btn-floating mx-1 hover-item ">
                         <i class="fab fa-facebook-f"></i>
@@ -65,7 +65,7 @@ padding-top: 50px; }
                     </button> -->
                 </div>
 
-                <p class="text-center">or:</p>
+                <p class="text-center" style="font-size:15px; color:rgb(195,195,195);">or:</p>
 
                 <!-- Name input -->
                 <!-- <div class="form-outline mb-4">
@@ -76,29 +76,29 @@ padding-top: 50px; }
                 <!-- Username input -->
                 <div class="form-outline mb-4">
                     <input type="text" id="registerUsername" class="form-control" />
-                    <label class="form-label" for="registerUsername">Username</label>
+                    <label class="form-label" for="registerUsername"> <span style="font-size:15px; color:rgb(195,195,195);">Username</span></label>
                 </div>
 
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <input type="email" id="registerEmail" class="form-control" />
-                    <label class="form-label" for="registerEmail">Email</label>
+                    <input type="email"  id="registerEmail" class="form-control" />
+                    <label class="form-label"  for="registerEmail"><span style="font-size:15px; color:rgb(195,195,195);">Email</span></label>
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-4">
                     <input type="password" id="registerPassword" class="form-control" />
-                    <label class="form-label" for="registerPassword">Password</label>
+                    <label class="form-label" for="registerPassword"><span style="font-size:15px; color:rgb(195,195,195);">Password</span></label>
                 </div>
 
                 <!-- Repeat Password input -->
                 <div class="form-outline mb-4">
                     <input type="password" id="registerRepeatPassword" class="form-control" />
-                    <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                    <label class="form-label" for="registerRepeatPassword"><span style="font-size:15px; color:rgb(195,195,195);">Confirm Password</span></label>
                 </div>
 
                 <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
+                <div class="form-check d-flex justify-content-center mb-4" style="font-size:15px; color:rgb(195,195,195);">
                     <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
                         aria-describedby="registerCheckHelpText" />
                     <label class="form-check-label" for="registerCheck">
