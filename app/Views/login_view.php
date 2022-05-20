@@ -26,7 +26,8 @@ padding-top: 50px; }
 .hover-item:hover{background-color:white; color:#101522;}
 .hover-button{background-color:#f82249;}
 .hover-button:hover{background-color:#f82249; opacity: .6}
-
+.hover-text{color:#f82249;}
+.hover-text:hover{color:#f82249; opacity: .6}
 </style>
 
 </head>
@@ -43,7 +44,7 @@ padding-top: 50px; }
     <div  >
         <div  role="tabpanel" aria-labelledby="tab-login">
             <form>
-                <div class="text-center mb-3">
+                <div class="text-center mb-3" style="font-size:15px; color:rgb(195,195,195);">
                     <p>Sign in with:</p>
                     <button type="button"   class="btn btn-link btn-floating mx-1 hover-item">
                         <i class="fab fa-facebook-f"></i>
@@ -62,33 +63,33 @@ padding-top: 50px; }
                     </button> -->
                 </div>
 
-                <p class="text-center">or:</p>
+                <p class="text-center" style="font-size:15px; color:rgb(195,195,195);">or:</p>
 
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                     <input type="email" id="loginName" class="form-control" />
-                    <label class="form-label" for="loginName">Email or username</label>
+                    <label class="form-label" for="loginName"><span style="font-size:15px; color:rgb(195,195,195);">Email or Username</span></label>
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-4">
                     <input type="password" id="loginPassword" class="form-control" />
-                    <label class="form-label" for="loginPassword">Password</label>
+                    <label class="form-label" for="loginPassword"><span style="font-size:15px; color:rgb(195,195,195);">Password</span></label>
                 </div>
 
                 <!-- 2 column grid layout -->
                 <div class="row mb-4">
                     <div class="col-md-6 d-flex justify-content-center">
                         <!-- Checkbox -->
-                        <div class="form-check mb-3 mb-md-0">
+                        <div class="form-check mb-3 mb-md-0" style="font-size:15px; color:rgb(195,195,195);">
                             <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
                             <label class="form-check-label" for="loginCheck"> Remember me </label>
                         </div>
                     </div>
 
-                    <div class="col-md-6 d-flex justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center hover-text" >
                         <!-- Simple link -->
-                        <a href="#!">Forgot password?</a>
+                        <a href="#!"><span style="font-size:15px; color:#f82249;">Forget Password?</span></a>
                     </div>
                 </div>
 
@@ -96,10 +97,10 @@ padding-top: 50px; }
                 <button type="submit"  class="btn btn-primary btn-block mb-4 hover-button">Login</button>
 
                 <!-- Register buttons -->
-                <div class="text-center">
+                <div class="text-center" style="font-size:15px; color:rgb(195,195,195);">
                 <p>Not a member?</p>
 
-                <a href="<?= base_url() ?>/Register">Sign Up</a>
+                <a href="<?= base_url() ?>/Register"><span style="font-size:15px; color:#f82249;">Sign Up</span></a>
                 </div>
             </form>
         </div>
