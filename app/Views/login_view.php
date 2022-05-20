@@ -20,8 +20,7 @@
     <title>Login / Sign Up Form</title>
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <style>
-body {background-color: #101522;
-padding-top: 50px; }
+body { background-color:#101522;}
 .hover-item{color:#f82249;}
 .hover-item:hover{background-color:white; color:#101522;}
 .hover-button{background-color:#f82249;}
