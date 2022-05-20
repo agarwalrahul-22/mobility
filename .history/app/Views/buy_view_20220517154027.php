@@ -2,21 +2,8 @@
 
 
 <?= $this->section("content");?>
-<head>
-  <style>
- #hero {
 
- background: url(http://localhost/mobility/public/assets/img/back.jpg) top center;
-background-size: cover;
-width: 100% !important;
-height: 100vh;
-position: relative;
-/* object-fit: fill; */
-background-repeat: no-repeat;
-}
-  </style>
-</head>
-
+ 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
