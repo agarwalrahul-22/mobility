@@ -11,6 +11,7 @@
       <a href="#more" class="about-btn scrollto">More</a>
     </div>
   </section>  -->
+  <div class="bg">
   <section class="devil tiwari">
             <div class = "image">
                <img src="<?=base_url()?>/public/assets/img/Egati.png">
@@ -54,5 +55,5 @@
         </section>
 
 
-
+</div>
 <?= $this->endSection(); ?>

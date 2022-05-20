@@ -139,6 +139,7 @@
 
   <!-- Template Main JS File -->
   <script src="<?= base_url() ?>/public/assets/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 
 </body>
 
