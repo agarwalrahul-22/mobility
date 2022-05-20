@@ -820,7 +820,6 @@ h6 {
   font-size: 15px;
   margin-bottom: 10px;
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -830,7 +829,9 @@ h6 {
   color: #eee;
   font-size: 14px;
 }
-
+.foot-title {
+  color: #f82249 !important;
+}
 #footer .footer-top {
   background: #040919;
   padding: 60px 0 30px 0;

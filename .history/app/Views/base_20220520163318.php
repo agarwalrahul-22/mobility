@@ -77,8 +77,8 @@
           <div class="col-lg-4 col-md-6 footer-info">
             <!-- <img src="assets/img/Egati.png" alt="TheEvenet"> -->
             <h2 class="foot-title">ELECTROGATI</h2>
-            <p class="foot-text">Electrogati is a company with a difference. Following are the characteristic features that make us distinct from the
-            crowded space of other commercial organizations.</p>
+            <h6>Electrogati is a company with a difference. Following are the characteristic features that make us distinct from the
+            crowded space of other commercial organizations.</h6>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">

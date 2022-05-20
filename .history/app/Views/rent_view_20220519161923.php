@@ -1,37 +1,17 @@
 <?= $this->extend("base");?>
+
+
 <?= $this->section("content");?>
-<head>
-  <style>
- #hero {
-
- background: url(http://localhost/mobility/public/assets/img/back.jpg) top center;
-background-size: cover;
-width: 100% !important;
-height: 100vh;
-position: relative;
-/* object-fit: fill; */
-background-repeat: no-repeat;
-}
-.rent-form{
-    overflow: auto;
-}
-::-webkit-scrollbar {
-    width: 0px;
-}
-
-
-  </style>
-</head>
 <link rel="stylesheet" href="<?= base_url() ?>/public/assets/css/sale.css">
-
+ 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-
-    <center class = "rent-form">
+      
+    <center>
         <div class="form_wrapper">
             <h2 style="text-align:center; color:white;">ADD PRODUCT</h2>
-            <form action="https://electrogati.com/sale" method="POST" >
+            <form action="https://electrogati.com/sale" method="POST">
 
 
                 <div class="choice">
@@ -88,9 +68,9 @@ background-repeat: no-repeat;
                         <p>Chesis No.</p>
                         <input type="text" name="chesis" class="wide" placeholder=" type here...">
                     </div>
+                    
 
-
-
+                    
 
 
                     <div class="input_element">
@@ -99,7 +79,7 @@ background-repeat: no-repeat;
                             <option value="Yes/No">Yes/No</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
-
+                            
                         </select>
                     </div>
 
@@ -133,7 +113,7 @@ background-repeat: no-repeat;
                         <input type="text" name="MTNperTrip" class="wide" placeholder="type here...">
                     </div>
 
-
+                    
 
                 </div>
 

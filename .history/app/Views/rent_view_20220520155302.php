@@ -13,12 +13,8 @@ position: relative;
 background-repeat: no-repeat;
 }
 .rent-form{
-    overflow: auto;
+    overflow: scroll;
 }
-::-webkit-scrollbar {
-    width: 0px;
-}
-
 
   </style>
 </head>

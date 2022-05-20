@@ -15,17 +15,10 @@
     height: 100%;
   }
     .home {
-      display: flex !important;
-      flex-direction: row !important;
-      justify-content: space-around !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
       align-items: center;
-    }
-    .foot-title{
-      color: #f82249;
-      font-size: 3em ;
-    }
-    .foot-text {
-      font-size: 1.3em !important;
     }
   .section-header {
     text-align: center;

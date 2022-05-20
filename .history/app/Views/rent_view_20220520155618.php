@@ -15,10 +15,6 @@ background-repeat: no-repeat;
 .rent-form{
     overflow: auto;
 }
-::-webkit-scrollbar {
-    width: 0px;
-}
-
 
   </style>
 </head>

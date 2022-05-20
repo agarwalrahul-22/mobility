@@ -18,7 +18,9 @@ background-repeat: no-repeat;
 ::-webkit-scrollbar {
     width: 0px;
 }
-
+::-webkit-scrollbar-thumb{
+    background: #FF0000 !important;
+}
 
   </style>
 </head>

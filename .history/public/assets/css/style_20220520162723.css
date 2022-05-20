@@ -483,7 +483,12 @@ h6 {
   overflow: hidden;
   position: relative;
 }  */
-
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
  @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -820,7 +825,6 @@ h6 {
   font-size: 15px;
   margin-bottom: 10px;
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
