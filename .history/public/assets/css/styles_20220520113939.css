@@ -6,13 +6,15 @@
     padding: 0;
      margin: 0;
 }
-/* body{
+body{
     font-family: 'Playfair Display', serif;
     display: grid;
     background-color: #101522 !important ;
+
+
     align-content: center;
     min-height: 100vh;
-} */
+}
 .bg {
     background-color: #040919 !important;
 }
