@@ -8,30 +8,23 @@
 background-size: cover;
 width: 100% !important;
 height: 100vh;
+/* overflow: hidden; */
 position: relative;
 /* object-fit: fill; */
 background-repeat: no-repeat;
 }
-.rent-form{
-    overflow: auto;
-}
-::-webkit-scrollbar {
-    width: 0px;
-}
-
 
   </style>
 </head>
 <link rel="stylesheet" href="<?= base_url() ?>/public/assets/css/sale.css">
 
-  <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
 
-    <center class = "rent-form">
+    <center>
         <div class="form_wrapper">
-            <h2 style="text-align:center; color:white;">ADD PRODUCT</h2>
-            <form action="https://electrogati.com/sale" method="POST" >
+        <h2 style="text-align:center; color:white;">ADD PRODUCT</h2>
+            <form action="https://electrogati.com/sale" method="POST">
 
 
                 <div class="choice">
@@ -90,12 +83,16 @@ background-repeat: no-repeat;
                     </div>
 
 
+                    <div class="input_element">
+                        <p>RC Number</p>
+                        <input type="text" name="RC" class="wide" placeholder=" type here...">
+                    </div>
 
 
 
                     <div class="input_element">
-                        <p>Driver available </p>
-                        <select name="driver" class="form-select" aria-label="Default select example">
+                        <p>Negotiate </p>
+                        <select name="negotiate" class="form-select wide" aria-label="Default select example">
                             <option value="Yes/No">Yes/No</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
@@ -114,23 +111,8 @@ background-repeat: no-repeat;
 
 
                     <div class="input_element" >
-                        <p>Charges/Km</p>
-                        <input type="text" name="perKM" class="wide" placeholder=" type here...">
-                    </div>
-
-                    <div class="input_element" >
-                        <p>Driver Charges/Day</p>
-                        <input type="text" name="DVRperDay" class="wide" placeholder=" type here...">
-                    </div>
-
-                    <div class="input_element" >
-                        <p>Charges for vehicle/Day</p>
-                        <input type="text" name="VHperDay" class="wide" placeholder=" type here...">
-                    </div>
-
-                    <div class="input_element" >
-                        <p>Maintainance Charge/Trip</p>
-                        <input type="text" name="MTNperTrip" class="wide" placeholder="type here...">
+                        <p>Vehicle Number</p>
+                        <input type="text" name="VHnumber" class="wide" placeholder=" type here...">
                     </div>
 
 
@@ -146,8 +128,7 @@ background-repeat: no-repeat;
         </div>
     </center>
 
-
     </div>
-  </section><!-- End Hero Section -->
+  </section>
 
 <?= $this->endSection(); ?>

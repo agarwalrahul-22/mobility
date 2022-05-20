@@ -8,17 +8,14 @@
 background-size: cover;
 width: 100% !important;
 height: 100vh;
+overflow: visible scroll;
 position: relative;
 /* object-fit: fill; */
 background-repeat: no-repeat;
 }
 .rent-form{
-    overflow: auto;
+    overflow: scroll;
 }
-::-webkit-scrollbar {
-    width: 0px;
-}
-
 
   </style>
 </head>
@@ -28,10 +25,10 @@ background-repeat: no-repeat;
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
 
-    <center class = "rent-form">
+    <center>
         <div class="form_wrapper">
             <h2 style="text-align:center; color:white;">ADD PRODUCT</h2>
-            <form action="https://electrogati.com/sale" method="POST" >
+            <form action="https://electrogati.com/sale" method="POST" class = "rent-form">
 
 
                 <div class="choice">

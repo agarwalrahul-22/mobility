@@ -14,11 +14,8 @@ background-repeat: no-repeat;
 }
 .rent-form{
     overflow: auto;
+    padding: 20px;
 }
-::-webkit-scrollbar {
-    width: 0px;
-}
-
 
   </style>
 </head>
