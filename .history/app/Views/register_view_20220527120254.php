@@ -32,50 +32,15 @@ padding-top: 50px; }
 </head>
 
 <body>
-    <?php
-        if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-            $username = $_POST['username'];
-            $email = $_POST['email'];
-            $pass = $_POST['pass'];
-            $cpass = $_POST['cpass'];
-
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "electrogati";
-
-            $conn = mysqli_connect($servername, $username, $password, $database);
-
-            if(!$conn){
-                die("Can't connect to the server: ". mysqli_connect_error());
-            }else{
-                $sql = "INSERT INTO `signup` (`username`, `email`, `pass`, `cpass`, `dt`) VALUES ('$username', '$email', '$pass','$cpass' , current_timestamp())";
-                $result = mysqli_query($conn, $sql);
-
-                if($result){
-                    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Success!</strong> Your entry has been submitted successfully!
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                    </button>
-                </div>';
-                }
-                else{
-                    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                    </button>
-                </div>';
-                }
-
-            }
-        }
-    ?>
 <div class="container w-50 p-5" >
+
+    <!-- Pills navs -->
+    <!-- Pills navs -->
+
+    <!-- Pills content -->
     <div class="  w-100 p-3" >
         <div  role="tabpanel" aria-labelledby="tab-register">
-            <form action="/mobility/app/views/index.php" method="post">
+            <form>
                 <div class="text-center mb-3" style="font-size:15px; color:rgb(195,195,195);">
                     <div class="text-center" >
                     <p class="text-center">Sign Up with:</p>
@@ -99,28 +64,34 @@ padding-top: 50px; }
 
                 <p class="text-center" style="font-size:15px; color:rgb(195,195,195);">or:</p>
 
+                <!-- Name input -->
+                <!-- <div class="form-outline mb-4">
+                    <input type="text" id="registerName" class="form-control" />
+                    <label class="form-label" for="registerName">Name</label>
+                </div> -->
+
                 <!-- Username input -->
                 <div class="form-outline mb-4">
-                    <input type="text" id="username" name="username" class="form-control" />
-                    <label class="form-label" for="username"> <span style="font-size:15px; color:rgb(195,195,195);">Username</span></label>
+                    <input type="text" id="registerUsername" class="form-control" />
+                    <label class="form-label" for="registerUsername"> <span style="font-size:15px; color:rgb(195,195,195);">Username</span></label>
                 </div>
 
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <input type="email"  id="email" name="email" class="form-control" />
-                    <label class="form-label"  for="email"><span style="font-size:15px; color:rgb(195,195,195);">Email</span></label>
+                    <input type="email"  id="registerEmail" class="form-control" />
+                    <label class="form-label"  for="registerEmail"><span style="font-size:15px; color:rgb(195,195,195);">Email</span></label>
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                    <input type="password" id="pass" name="pass" class="form-control" />
-                    <label class="form-label" for="pass"><span style="font-size:15px; color:rgb(195,195,195);">Password</span></label>
+                    <input type="password" id="registerPassword" class="form-control" />
+                    <label class="form-label" for="registerPassword"><span style="font-size:15px; color:rgb(195,195,195);">Password</span></label>
                 </div>
 
                 <!-- Repeat Password input -->
                 <div class="form-outline mb-4">
-                    <input type="password" id="cpass" name="cpass" class="form-control" />
-                    <label class="form-label" for="cpass"><span style="font-size:15px; color:rgb(195,195,195);">Confirm Password</span></label>
+                    <input type="password" id="registerRepeatPassword" class="form-control" />
+                    <label class="form-label" for="registerRepeatPassword"><span style="font-size:15px; color:rgb(195,195,195);">Confirm Password</span></label>
                 </div>
 
                 <!-- Checkbox -->

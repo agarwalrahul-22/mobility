@@ -32,50 +32,55 @@ padding-top: 50px; }
 </head>
 
 <body>
-    <?php
-        if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-            $username = $_POST['username'];
-            $email = $_POST['email'];
-            $pass = $_POST['pass'];
-            $cpass = $_POST['cpass'];
-
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "electrogati";
-
-            $conn = mysqli_connect($servername, $username, $password, $database);
-
-            if(!$conn){
-                die("Can't connect to the server: ". mysqli_connect_error());
-            }else{
-                $sql = "INSERT INTO `signup` (`username`, `email`, `pass`, `cpass`, `dt`) VALUES ('$username', '$email', '$pass','$cpass' , current_timestamp())";
-                $result = mysqli_query($conn, $sql);
-
-                if($result){
-                    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Success!</strong> Your entry has been submitted successfully!
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                    </button>
-                </div>';
-                }
-                else{
-                    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                    </button>
-                </div>';
-                }
-
-            }
-        }
-    ?>
 <div class="container w-50 p-5" >
+
+    <!-- Pills navs -->
+    <!-- Pills navs -->
+
+    <!-- Pills content -->
+    <?php
+            if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $username = $_POST['username'];
+                $email = $_POST['email'];
+                $pass = $_POST['pass'];
+                $cpass = $_POST['cpass'];
+
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $database = "electrogati";
+
+                $conn = mysqli_connect($servername, $username, $password, $database);
+
+                if(!$conn){
+                    die("Can't connect to the server: ". mysqli_connect_error());
+                }else{
+                    $sql = "INSERT INTO `signup` (`username`, `email`, `pass`, `cpass`, `dt`) VALUES ('$username', '$email', '$pass','$cpass' , current_timestamp())";
+                    $result = mysqli_query($conn, $sql);
+
+                    if($result){
+                        echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Success!</strong> Your entry has been submitted successfully!
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>';
+                    }
+                    else{
+                        echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>';
+                    }
+
+                }
+            }
+        ?>
     <div class="  w-100 p-3" >
         <div  role="tabpanel" aria-labelledby="tab-register">
-            <form action="/mobility/app/views/index.php" method="post">
+            <form action="/mobility/index.php" method="post">
                 <div class="text-center mb-3" style="font-size:15px; color:rgb(195,195,195);">
                     <div class="text-center" >
                     <p class="text-center">Sign Up with:</p>
