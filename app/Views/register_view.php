@@ -1,5 +1,5 @@
+<?php $page_session = \Config\Services::session(); ?>
 <?= $this->extend("base");?>
-
 
 <?= $this->section("content");?>
 <!DOCTYPE html>
@@ -26,7 +26,14 @@ padding-top: 50px; }
 .hover-item:hover{background-color:white; color:#101522;}
 .hover-button{background-color:#f82249;}
 .hover-button:hover{background-color:#f82249; opacity: .6}
-
+.card { 
+        box-shadow: 0 0 30px 0;
+        background: #161d2f !important;
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        border: 2px solid rgb(195,195,195);
+    }
+    .text-danger{color:red;}
 </style>
 
 </head>
@@ -34,20 +41,32 @@ padding-top: 50px; }
 <body>
 <div class="container w-50 p-5" >
 
-    <!-- Pills navs -->
     
-    <!-- Pills navs -->
-
-    <!-- Pills content -->
-    <div class="  w-100 p-3" >
+    <div class="  w-100 p-3 card card-body" >
         
         
-        <div  role="tabpanel" aria-labelledby="tab-register">
-            <form>
+    <div  >
+   
+          <?php 
+          if($page_session->getTempdata('success')):
+            ?>
+            <div class="alert alert-success"><?=$page_session->getTempdata('success');?></div>
+          <?php
+          endif;
+          ?>  
+          <?php 
+          if($page_session->getTempdata('error')):
+            ?>
+            <div class="alert alert-danger"><?=$page_session->getTempdata('error');?></div>
+          <?php
+          endif;
+          ?>  
+           
+                <?= form_open() ?>
                 <div class="text-center mb-3" style="font-size:15px; color:rgb(195,195,195);">
                     <div class="text-center" >
                     <p class="text-center">Sign Up with:</p>
-</div>
+                </div>
                     <button type="button"  class="btn btn-link btn-floating mx-1 hover-item ">
                         <i class="fab fa-facebook-f"></i>
                     </button>
@@ -67,34 +86,48 @@ padding-top: 50px; }
 
                 <p class="text-center" style="font-size:15px; color:rgb(195,195,195);">or:</p>
 
-                <!-- Name input -->
-                <!-- <div class="form-outline mb-4">
-                    <input type="text" id="registerName" class="form-control" />
-                    <label class="form-label" for="registerName">Name</label>
-                </div> -->
+                
 
                 <!-- Username input -->
-                <div class="form-outline mb-4">
-                    <input type="text" id="registerUsername" class="form-control" />
-                    <label class="form-label" for="registerUsername"> <span style="font-size:15px; color:rgb(195,195,195);">Username</span></label>
+                <div class="form-outline mb-1">
+                <label class="form-label mb-1" for="registerUsername"> <span style="font-size:15px; color:rgb(195,195,195);">Username</span></label>
+                    <input type="text" id="registerUsername" name="username" value='<?= set_value('username') ?>' class="form-control" />
+                   <span class="text-danger">
+                       <?= display_error(\Config\Services::validation(),'username');?>
+                   </span>
+                    
                 </div>
 
                 <!-- Email input -->
-                <div class="form-outline mb-4">
-                    <input type="email"  id="registerEmail" class="form-control" />
-                    <label class="form-label"  for="registerEmail"><span style="font-size:15px; color:rgb(195,195,195);">Email</span></label>
+                <div class="form-outline mb-1">
+                <label class="form-label mb-1"  for="registerEmail"><span style="font-size:15px; color:rgb(195,195,195);">Email</span></label>
+                    <input type="email"  id="registerEmail"  name="email" value='<?= set_value('email') ?>'  class="form-control" />
+                    <span class="text-danger">
+                       <?= display_error(\Config\Services::validation(),'email');?>
+                   </span>
+                  
                 </div>
 
                 <!-- Password input -->
-                <div class="form-outline mb-4">
-                    <input type="password" id="registerPassword" class="form-control" />
-                    <label class="form-label" for="registerPassword"><span style="font-size:15px; color:rgb(195,195,195);">Password</span></label>
+                <div class="form-outline mb-1">
+                <label class="form-label mb-1" for="registerPassword"><span style="font-size:15px; color:rgb(195,195,195);">Password</span></label>
+                    <input type="password" id="registerPassword"  name="password" value='<?= set_value('password') ?>' class="form-control" />
+                    <span class="text-danger">
+                       <?= display_error(\Config\Services::validation(),'password');?>
+                   </span>
+                   
+                
                 </div>
 
                 <!-- Repeat Password input -->
-                <div class="form-outline mb-4">
-                    <input type="password" id="registerRepeatPassword" class="form-control" />
-                    <label class="form-label" for="registerRepeatPassword"><span style="font-size:15px; color:rgb(195,195,195);">Confirm Password</span></label>
+                <div class="form-outline mb-1">
+                <label class="form-label mb-1" for="registerRepeatPassword"><span style="font-size:15px; color:rgb(195,195,195);">Confirm Password</span></label>
+                    <input type="password" id="registerRepeatPassword"  name="confirm_pass" value='<?= set_value('confirm_pass') ?>'  class="form-control" />
+                    <span class="text-danger">
+                       <?= display_error(\Config\Services::validation(),'confirm_pass');?>
+                   </span>
+                    
+            </span> 
                 </div>
 
                 <!-- Checkbox -->
@@ -107,8 +140,9 @@ padding-top: 50px; }
                 </div>
 
                 <!-- Submit button -->
-                <button type="submit"  class=" btn btn-primary btn-block mb-3 hover-button">Sign Up</button>
-            </form>
+                <input type="submit"  class=" btn btn-primary btn-block mb-3 hover-button" name="save" value="Sign Up">
+            
+                <?= form_close() ?>
         </div>
     </div>
     <!-- Pills content -->

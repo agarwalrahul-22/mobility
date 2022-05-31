@@ -27,6 +27,13 @@ body { background-color:#101522; padding-top: 60px;}
 .hover-button:hover{background-color:#f82249; opacity: .6}
 .hover-text{color:#f82249;}
 .hover-text:hover{color:#f82249; opacity: .6}
+.card { 
+        box-shadow: 0 0 30px 0;
+        background: #161d2f !important;
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        border: 2px solid rgb(195,195,195);
+    }
 </style>
 
 </head>
@@ -40,7 +47,7 @@ body { background-color:#101522; padding-top: 60px;}
     <!-- Pills navs -->
 
     <!-- Pills content -->
-    <div class=" w-100 p-2" >
+    <div class=" w-100 p-3 card card-body" >
         <div  role="tabpanel" aria-labelledby="tab-login">
             <form>
                 <div class="text-center mb-3" style="font-size:15px; color:rgb(195,195,195);">
@@ -65,19 +72,21 @@ body { background-color:#101522; padding-top: 60px;}
                 <p class="text-center" style="font-size:15px; color:rgb(195,195,195);">or:</p>
 
                 <!-- Email input -->
-                <div class="form-outline mb-4">
+                <div class="form-outline mb-1">
+                <label class="form-label" for="loginName"><span style="font-size:15px; color:rgb(195,195,195);">Email or Username</span></label>
                     <input type="email" id="loginName" class="form-control" />
-                    <label class="form-label" for="loginName"><span style="font-size:15px; color:rgb(195,195,195);">Email or Username</span></label>
+                    
                 </div>
 
                 <!-- Password input -->
-                <div class="form-outline mb-4">
+                <div class="form-outline mb-1">
+                <label class="form-label" for="loginPassword"><span style="font-size:15px; color:rgb(195,195,195);">Password</span></label>
                     <input type="password" id="loginPassword" class="form-control" />
-                    <label class="form-label" for="loginPassword"><span style="font-size:15px; color:rgb(195,195,195);">Password</span></label>
+                    
                 </div>
 
                 <!-- 2 column grid layout -->
-                <div class="row mb-4">
+                <div class="row mb-1">
                     <div class="col-md-6 d-flex justify-content-center">
                         <!-- Checkbox -->
                         <div class="form-check mb-3 mb-md-0" style="font-size:15px; color:rgb(195,195,195);">
@@ -93,7 +102,7 @@ body { background-color:#101522; padding-top: 60px;}
                 </div>
 
                 <!-- Submit button -->
-                <button type="submit"  class="btn btn-primary btn-block mb-4 hover-button">Login</button>
+                <input type="submit"  class=" btn btn-primary btn-block mb-3 hover-button" name="login" value="Login">
 
                 <!-- Register buttons -->
                 <div class="text-center" style="font-size:15px; color:rgb(195,195,195);">
